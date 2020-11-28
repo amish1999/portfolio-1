@@ -1,0 +1,34 @@
+.Phone {
+  margin: 0 auto;
+  position: relative;
+  transform: rotate(90deg) scale(0);
+}
+.Phone-svg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.Phone-content {
+  top: 13.5%;
+  width: 85%;
+  z-index: 0;
+  left: 8%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.Phone-contentPlx {
+  height: 100%;
+  width: 100%;
+}
+.Phone-contentSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text);
+  background: var(--bg);
+}
