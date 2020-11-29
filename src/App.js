@@ -17,7 +17,8 @@ const GlobalStyle = createGlobalStyle`
 
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
   html ,body {
-    font-family: 'Open Sans', sans-serif;box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+    box-sizing: border-box;
     background-color: var(--bg);
     color: var(--text);
   }

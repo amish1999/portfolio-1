@@ -18,7 +18,7 @@ const Button = ({ url, value }) => {
 export default Button;
 
 const Wrapper = styled.div`
-  margin: 32px;
+  margin: 32px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;

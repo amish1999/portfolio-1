@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import Made from "../components/Made";
+import Section from "../components/Section";
 import LandPage from "../components/LandPage";
 import HomeReach from "../components/contactme/HomeReach";
 import BackgroundSvg from "../components/assets/ascii-pattern-tall.svg";
@@ -8,19 +10,28 @@ import BackgroundSvg from "../components/assets/ascii-pattern-tall.svg";
 const home = () => {
   return (
     <>
-      <Container>
+      <Container1>
         <LandPage />
-      </Container>
+      </Container1>
+      {/*   */}
+      <Container1>
+        <Section />
+      </Container1>
+      {/*   */}
       <Container1>
         <HomeReach />
       </Container1>
+      {/*   */}
+      <Container2>
+        <Made />
+      </Container2>
     </>
   );
 };
 
 export default home;
 
-const Container = styled.div`
+const Container1 = styled.div`
   z-index: 0;
   display: flex;
   max-width: 100%;
@@ -36,30 +47,16 @@ const Container = styled.div`
   will-change: transform;
 `;
 
-const Container1 = styled.div`
+const Container2 = styled.div`
   z-index: 0;
   display: flex;
   max-width: 100%;
-  min-height: 100vh;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--bg);
+  background: url(${BackgroundSvg});
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
-
-/* 
-
-import { Controller, Scene } from "react-scrollmagic";
-
-<Controller globalSceneOptions={{ triggerHook: "onLeave" }}>
-          <Scene pin>
-            <Container>
-              <LandPage />
-            </Container>
-          </Scene>
-          <Scene pin>
-            <Container1>hello</Container1>
-          </Scene>
-        </Controller>
-
-*/
