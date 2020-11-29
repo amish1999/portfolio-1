@@ -18,7 +18,7 @@ const Made = () => {
       <ThemeProvider theme={theme}>
         <Container>
           <Content>
-            <Fade bottom>
+            <Fade>
               <Row>
                 <Code>
                   {" "}
@@ -46,7 +46,7 @@ export default Made;
 
 const Container = styled.div`
   width: 70%;
-  height: 50vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   flex-direction: column;

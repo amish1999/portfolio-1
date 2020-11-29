@@ -6,7 +6,7 @@ export const textData = [
     properties: [
       {
         startValue: 0,
-        endValue: 0,
+        endValue: 50,
         unit: "vh",
         property: "translateY"
       },
