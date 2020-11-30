@@ -156,3 +156,39 @@ export const slideShow = [
     alt: "beach"
   }
 ];
+
+export const workInfo = {
+  text: "About my work.",
+  disc:
+    "I strongly believe that developers have a responsibility to make sure that what we are building does no harm and I try to be as ethical as I can in taking on projects. Below a list of some selected project I want to show, visit my github page for more"
+};
+
+export const works = [
+  {
+    name: "Color Picker",
+    link: "https://github.com/wseai/ColorPicker",
+    branch: "a clean UI for a ( HSL | RGB | HEX ) color picker"
+  },
+  {
+    name: "Real Time Face-Detection",
+    link: "https://github.com/wseai/RT-faceDetection",
+    branch:
+      "Real time face detection through a webcam using using the Face API JS library built on Tensor Flow. It can detect your facial expressions along with your age"
+  },
+  {
+    name: "Azure Repos",
+    link: "https://github.com/wseai/azure-repos-vscode",
+    branch: "Contribution to Visual Studio Team Services Extension for VS Code"
+  },
+  {
+    name: "Medespoir",
+    link: "https://github.com/wseai/medespoir",
+    branch:
+      "1st project done with Angular in my first internship for a Medical compagny "
+  },
+  {
+    name: "Panterest",
+    link: "https://github.com/wseai/panterest",
+    branch: "Pinterest clone with symfony 5 - school project"
+  }
+];

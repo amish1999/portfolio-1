@@ -3,6 +3,7 @@ import reset from "styled-reset";
 import { createGlobalStyle } from "styled-components";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import ScrollTop from "./hooks/ScrollTop";
 import { MenuProvider } from "./state";
 
 import Home from "./pages/home";
@@ -66,6 +67,7 @@ const GlobalStyle = createGlobalStyle`
 const App = () => {
   return (
     <Router>
+      <ScrollTop />
       <>
         <GlobalStyle />
         <Cursor />
