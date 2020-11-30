@@ -5,13 +5,17 @@ import { useMenuContext } from "../../state";
 import { Squash as Hamburger } from "hamburger-react";
 import NavLinks from "./NavLinks";
 import { useScroll } from "../../hooks";
+import useSound from "use-sound";
+import BtnClick from "../assets/btn_click.wav";
 
 const DesktopNavbar = () => {
   const { isMenuOpen, toggleMenu } = useMenuContext();
   const { isScrolled } = useScroll();
+  const [clicks] = useSound(BtnClick);
+
   return (
     <DesktopNav isScrolled={isScrolled}>
-      <Link to='/' className='logo'>
+      <Link onClick={clicks} to='/' className='logo'>
         walees
       </Link>
       <NavLinks />

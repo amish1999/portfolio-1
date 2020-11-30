@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Made from "../components/Made";
 import Section from "../components/Section";
 import LandPage from "../components/LandPage";
 import HomeReach from "../components/contactme/HomeReach";

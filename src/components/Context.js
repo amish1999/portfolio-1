@@ -119,3 +119,40 @@ export const skillsSet = [
     tool: "ps/ai/xd"
   }
 ];
+
+export const photog = {
+  text: "Photography.",
+  disc:
+    "Outside of my university and coding, I like to spend as much time as I can away from my laptop, getting out and about with my camera. I shoot most of the time with my phone, and sometimes with my DSLR Nikon D3300 and a 35mm lens"
+};
+
+export const slideShow = [
+  {
+    img: "https://pbs.twimg.com/media/EoE-Ad0WEAAgk11?format=jpg&name=large",
+    alt: "bar"
+  },
+  {
+    img: "https://pbs.twimg.com/media/EoE-AeDXUAEPoEZ?format=jpg&name=large",
+    alt: "sky"
+  },
+  {
+    img:
+      "//im.vsco.co/aws-us-west-2/1c99d9/91002373/5d7eaf2765591d282e39b351/vsco5d7eaf415bddb.jpg?w=658&dpr=2",
+    alt: "building"
+  },
+  {
+    img:
+      "//im.vsco.co/aws-us-west-2/1c99d9/91002373/5db4baa117d048042fca77f7/vsco5db4baa61c7c8.jpg?w=585&dpr=2",
+    alt: "man in byc"
+  },
+  {
+    img:
+      "//im.vsco.co/aws-us-west-2/1c99d9/91002373/5d392bfd5bfdd253805d85c4/vsco5d392c0589e49.jpg?w=582&dpr=2",
+    alt: "ruins"
+  },
+  {
+    img:
+      "//im.vsco.co/aws-us-west-2/1c99d9/91002373/5d1bca6940e3854b21da1ffc/vsco5d1bca6e6039e.jpg?w=655&dpr=2",
+    alt: "beach"
+  }
+];

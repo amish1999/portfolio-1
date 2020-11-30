@@ -10,7 +10,6 @@ const SkillCard = () => {
       <Container>
         <Row>
           {skillsSet.map((set, index) => {
-            console.log(set);
             return <Chip key={index} icon={set.poly} title={set.tool} />;
           })}
         </Row>
