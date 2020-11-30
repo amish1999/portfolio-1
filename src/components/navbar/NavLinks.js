@@ -7,6 +7,7 @@ import Icon from "../Icon";
 
 import useSound from "use-sound";
 import BtnLight from "../assets/light.wav";
+import BtnClick from "../assets/btn_click.wav";
 
 export const links = ["about", "contact", "work"];
 
@@ -15,11 +16,12 @@ const DesktopNavLinks = () => {
   const [theme, toggleTheme] = useTheme();
 
   const [lights] = useSound(BtnLight);
+  const [clicks] = useSound(BtnClick);
 
   return (
     <NavLinksWrapper className='nav-links'>
       {links.map(link => (
-        <li key={link}>
+        <li key={link} onClick={clicks}>
           <Linker
             activeStyle={{
               color: "#FF4136"

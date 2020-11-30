@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import Photo from "../assets/version_control.svg";
+
 import Zoom from "react-reveal/Zoom";
-const HeroSvg = () => {
+const HeroSvg = ({ photo, alt }) => {
   return (
     <>
       <Zoom>
-        <Image src={Photo} alt='Coder' />
+        <Image src={photo} alt={alt} />
       </Zoom>
     </>
   );

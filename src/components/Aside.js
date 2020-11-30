@@ -1,24 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-import HeroDiss from "./hero/HeroDiss";
-import HeroText from "./hero/HeroText";
-import Button from "./Button";
-import HeroSvg from "./hero/HeroSvg";
-import { sectionInfo } from "./Context";
-import WorkSvg from "./assets/version_control.svg";
 
-const Section = () => {
+import { aboutInfo } from "./Context";
+import HeroText from "./hero/HeroText";
+import HeroDiss from "./hero/HeroDiss";
+import HeroSvg from "./hero/HeroSvg";
+
+import AboutMe from "./assets/aboutme.svg";
+
+const Aside = () => {
   return (
     <>
       <Container>
         <Row>
           <Col>
-            <HeroText text={sectionInfo.text} />
-            <HeroDiss disc={sectionInfo.disc} />
-            <Button url='/work' value='about my work' />
+            <HeroText text={aboutInfo.text} />
+            <HeroDiss disc={aboutInfo.disc} />
           </Col>
           <Col2>
-            <HeroSvg photo={WorkSvg} alt='coder' />
+            <HeroSvg photo={AboutMe} alt='about me' />
           </Col2>
         </Row>
       </Container>
@@ -26,7 +26,7 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Aside;
 
 const Container = styled.div`
   width: 70%;

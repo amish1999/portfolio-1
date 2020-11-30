@@ -23,10 +23,6 @@ const home = () => {
       <Container>
         <HomeReach />
       </Container>
-      {/*   */}
-      <Container2>
-        <Made />
-      </Container2>
     </>
   );
 };
@@ -62,18 +58,4 @@ const Container1 = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   will-change: transform;
-`;
-
-const Container2 = styled.div`
-  z-index: 0;
-  display: flex;
-  max-width: 100%;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background: url(${BackgroundSvg});
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
 `;

@@ -2,20 +2,19 @@ import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 
 import Fade from "react-reveal/Fade";
-import { sectionInfo } from "../Context";
 
 const theme = {
   primary: "#FF4136",
   secondary: "#a162e8"
 };
 
-const HeroDiss = () => {
+const HeroDiss = ({ disc }) => {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Fade left>
+        <Fade bottom>
           <DissGroup>
-            <Text>{sectionInfo.disc}</Text>
+            <Text>{disc}</Text>
           </DissGroup>{" "}
         </Fade>
       </ThemeProvider>
