@@ -5,11 +5,16 @@ import { useMenuContext } from "../../state";
 import { useTheme } from "../../hooks";
 import Icon from "../Icon";
 
+import useSound from "use-sound";
+import BtnLight from "../assets/light.wav";
+
 export const links = ["about", "contact", "work"];
 
 const DesktopNavLinks = () => {
   const { closeMenu } = useMenuContext();
   const [theme, toggleTheme] = useTheme();
+
+  const [lights] = useSound(BtnLight);
 
   return (
     <NavLinksWrapper className='nav-links'>
@@ -26,7 +31,7 @@ const DesktopNavLinks = () => {
           </Linker>
         </li>
       ))}
-      <li>
+      <li onClick={lights}>
         <button onClick={toggleTheme}>
           <Icon name={theme === "dark" ? "day" : "night"} />
         </button>

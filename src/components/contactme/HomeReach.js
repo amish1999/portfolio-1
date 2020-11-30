@@ -9,7 +9,12 @@ import "../parallax/docs.css";
 import { contentData } from "../parallax/ContentData";
 import { phoneData } from "../parallax/PhoneData";
 
+import useSound from "use-sound";
+import BtnClick from "../assets/btn_click.wav";
+
 const HomeReach = () => {
+  const [clicks] = useSound(BtnClick);
+
   return (
     <>
       <Plx className='Phone' parallaxData={phoneData}>
@@ -17,7 +22,9 @@ const HomeReach = () => {
         <div className='Phone-content'>
           <Plx className='Phone-contentPlx' parallaxData={contentData}>
             <div className='Phone-contentSection'>
-              <Linker to='/contact'>Say Hi!</Linker>
+              <Linker onClick={clicks} to='/contact'>
+                Say Hi!
+              </Linker>
             </div>
           </Plx>
         </div>
