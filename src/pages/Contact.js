@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Form from "../components/form/Form";
 
 const Contact = () => {
   return (
     <>
       <Container>
-        <h1>Contact</h1>
+        <Form />
       </Container>
     </>
   );

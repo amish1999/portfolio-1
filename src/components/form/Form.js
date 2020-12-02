@@ -1,26 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import Contract from "./Contract";
+import Reach from "./Reach";
 
-import { aboutInfo } from "./Context";
-import HeroText from "./hero/HeroText";
-import HeroDiss from "./hero/HeroDiss";
-import HeroSvg from "./hero/HeroSvg";
-
-import AboutMe from "./assets/aboutme.svg";
-import Social from "./Social";
-
-const Aside = () => {
+const Form = () => {
   return (
     <>
       <Container>
         <Row>
           <Col>
-            <HeroText text={aboutInfo.text} />
-            <HeroDiss disc={aboutInfo.disc} />
-            <Social />
+            <Reach />
           </Col>
           <Col2>
-            <HeroSvg photo={AboutMe} alt='about me' />
+            <Contract />
           </Col2>
         </Row>
       </Container>
@@ -28,7 +20,7 @@ const Aside = () => {
   );
 };
 
-export default Aside;
+export default Form;
 
 const Container = styled.div`
   width: 70%;
@@ -51,8 +43,8 @@ const Row = styled.div`
   justify-content: space-between;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: column-reverse;
+    justify-content: center;
   }
 `;
 
@@ -60,8 +52,10 @@ const Col = styled.div`
   width: 100%;
   display: flex;
   margin: 25px 0px;
+  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  background-color: red;
 `;
 
 const Col2 = styled.div`
@@ -71,4 +65,5 @@ const Col2 = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: blueviolet;
 `;

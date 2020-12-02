@@ -2,6 +2,7 @@ import { MdWeb } from "react-icons/md";
 import { RiAdvertisementLine } from "react-icons/ri";
 import { IoLogoAngular, IoLogoPython } from "react-icons/io";
 import { IoLogoReact, IoLogoFirebase } from "react-icons/io5";
+import { FaGithub, FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 import {
   SiCplusplus,
   SiJavascript,
@@ -191,4 +192,11 @@ export const works = [
     link: "https://github.com/wseai/panterest",
     branch: "Pinterest clone with symfony 5 - school project"
   }
+];
+
+export const socialIcon = [
+  { name: <FaGithub />, link: "https://github.com/wseai" },
+  { name: <FaTwitter />, link: "https://twitter.com/SebiiyWalee" },
+  { name: <FaInstagram />, link: "https://www.instagram.com/wale_sebii/" },
+  { name: <FaFacebook />, link: "https://facebook.com/walee.sebiiy" }
 ];

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import Header from "./Header";
-import Fade from "react-reveal/Fade";
 import { slideShow } from "../Context";
 import Linker from "./Linker";
 
