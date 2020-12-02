@@ -22,4 +22,8 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 375px) {
+    min-height: 120vh;
+  }
 `;

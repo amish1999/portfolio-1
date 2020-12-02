@@ -4,15 +4,18 @@ import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import { BsPhone } from "react-icons/bs";
 import { SiMinutemailer } from "react-icons/si";
+import { GiPositionMarker } from "react-icons/gi";
 
 const Reach = () => {
   return (
     <>
       <Wrapper>
-        <Fade bottom>
-          <Text>let's talk</Text>
-        </Fade>
         <TextGroup>
+          <Fade bottom>
+            <Ddat>
+              <GiPositionMarker /> &nbsp; Tunis, Tunisia
+            </Ddat>
+          </Fade>
           <Fade bottom>
             <Ddat>
               <BsPhone /> &nbsp; +216 58-061-835
@@ -62,9 +65,12 @@ const TextGroup = styled.div`
 `;
 
 const Ddat = styled.p`
+  widows: 100%;
   display: flex;
   padding: 5px;
+  margin: 5px 0px;
   font-size: 1.3rem;
   color: var(--text);
-  align-items: center;
+
+  justify-content: flex-start;
 `;

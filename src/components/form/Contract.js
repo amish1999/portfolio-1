@@ -13,7 +13,7 @@ const Contract = () => {
     <>
       <Wrapper>
         <Fade bottom>
-          <Text>hire me</Text>
+          <Text>for business</Text>
         </Fade>
         <FormGroup>
           <Form
@@ -24,7 +24,9 @@ const Contract = () => {
             <input type='hidden' name='form-name' value='contact' />
             <Input tt='text' nn='name' ph='your name' />
             <Input tt='email' nn='email' ph='your email' />
-            <Button onClick={clicks} type='submit'></Button>
+            <Button onClick={clicks} type='submit'>
+              for hiring
+            </Button>
           </Form>
         </FormGroup>
       </Wrapper>
@@ -60,12 +62,21 @@ const FormGroup = styled.div`
   flex-direction: column;
 `;
 
-const Form = styled.form``;
+const Form = styled.form`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+`;
 const Button = styled.button`
   outline: none;
   font-weight: 600;
+  margin: 25px 0px;
   padding: 12px 42px;
   color: var(--text);
+  background: none;
   text-transform: capitalize;
   transition: 0.35s ease-in-out;
   border: 2px solid var(--text);

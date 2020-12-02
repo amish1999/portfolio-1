@@ -55,7 +55,11 @@ const Col = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: red;
+  border-right: 1px solid var(--text);
+
+  @media (max-width: 768px) {
+    border: none;
+  }
 `;
 
 const Col2 = styled.div`
@@ -65,5 +69,9 @@ const Col2 = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: blueviolet;
+  border-left: 1px solid var(--text);
+
+  @media (max-width: 768px) {
+    border: none;
+  }
 `;
