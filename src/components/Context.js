@@ -29,8 +29,8 @@ export const ItemArray = [
   { list: "// styled-components" },
   { list: "// react-router-dom" },
   { list: "// React-Spring" },
-  { list: "// Firebase" },
-  { list: "// FireStore" }
+  { list: "// Prop-Types" },
+  { list: "// Netlify Hosting" }
 ];
 
 export const sectionInfo = {

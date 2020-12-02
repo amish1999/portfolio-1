@@ -15,20 +15,22 @@ const Contract = () => {
         <Fade bottom>
           <Text>for business</Text>
         </Fade>
-        <FormGroup>
-          <Form
-            name='contact'
-            action='/contact'
-            method='POST'
-            data-netlify='true'>
-            <input type='hidden' name='form-name' value='contact' />
-            <Input tt='text' nn='name' ph='your name' />
-            <Input tt='email' nn='email' ph='your email' />
-            <Button onClick={clicks} type='submit'>
-              for hiring
-            </Button>
-          </Form>
-        </FormGroup>
+        <Fade bottom cascade>
+          <FormGroup>
+            <Form
+              name='contact'
+              action='/contact'
+              method='POST'
+              data-netlify='true'>
+              <input type='hidden' name='form-name' value='contact' />
+              <Input tt='text' nn='name' ph='your name' />
+              <Input tt='email' nn='email' ph='your email' />
+              <Button onClick={clicks} type='submit'>
+                for hiring
+              </Button>
+            </Form>
+          </FormGroup>
+        </Fade>
       </Wrapper>
     </>
   );

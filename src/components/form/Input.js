@@ -6,7 +6,7 @@ const Input = ({ tt, nn, ph }) => {
     <>
       <InputGroup>
         <EnterData required type={tt} name={nn} placeholder={ph} />
-      </InputGroup>
+      </InputGroup>{" "}
     </>
   );
 };
