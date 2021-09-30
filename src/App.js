@@ -64,23 +64,21 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const App = () => {
-  return (
-    <Router>
-      <ScrollTop />
-      <>
-        <GlobalStyle />
-        <Cursor />
-        <MenuProvider>
-          <Navbar />
-        </MenuProvider>
-        <Route exact path='/' component={Home} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/about' component={About} />
-        <Route path='/work' component={Work} />
-      </>
-    </Router>
-  );
-};
+<!-------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default App;
